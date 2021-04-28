@@ -1,9 +1,50 @@
-body {
-  background-color: #ecf0f1;
-}
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
 
 body {
-  color: #34495e;
+  background-color: #112327;
+  font-family: "Kanit", sans-serif;
+}
+h1 {
+  font-size: 120px;
+  font-weight: bold;
+}
+body {
+  color: white;
+}
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 19px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+input {
+  border: none;
+  background: transparent;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+input[type="text"] {
+  font-family: "Kanit", sans-serif;
+}
+input::placeholder {
+  color: white;
+  font-family: "Kanit", sans-serif;
+}
+
+ul {
+  float: left;
+}
+
+.list-align {
+  float: left;
 }
 
 .clicked {
@@ -15,6 +56,55 @@ body {
   display: none;
 }
 
+.greetings {
+  margin-top: 2rem;
+  font-size: 30px;
+}
+
 .showing {
   display: block;
+}
+
+.form {
+  margin-top: 2rem;
+}
+form {
+  margin-top: 1rem;
+}
+.main__align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7rem;
+}
+.weather {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.toDoList span {
+  font-weight: bold;
+  font-size: 25px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
